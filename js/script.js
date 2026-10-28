@@ -1,7 +1,6 @@
 const nav = document.querySelector("nav");
 if (nav) {
     const themeToggleBtn = document.createElement("button");
-    themeToggleBtn.innerText = "Toggle Mode";
     themeToggleBtn.className = "theme-toggle-btn";
     nav.appendChild(themeToggleBtn);
 
@@ -42,3 +41,4 @@ const observer = new IntersectionObserver((entries, observer) => {
 images.forEach(img => {
     observer.observe(img);
 });
+
