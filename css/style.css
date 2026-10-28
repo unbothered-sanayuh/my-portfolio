@@ -332,7 +332,6 @@ button:hover, .quick-btn:hover {
     }
 }
 
-/* Switch Slider Toggle Button sa pinaka-kanan (Wala nang text, puro pabilog na switch) */
 .theme-toggle-btn {
     background-color: #ffffff;
     border: none;
@@ -370,7 +369,6 @@ body.dark-mode .theme-toggle-btn::before {
     background-color: #f1e0ba;
 }
 
-/* LED Glow Effect para sa Dark Mode (Malinis, walang itim na shadow) */
 @keyframes softLedGlow {
     0% {
         color: #ffffff !important;
