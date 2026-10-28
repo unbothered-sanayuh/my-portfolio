@@ -5,6 +5,7 @@
     --pink-soft: #FCE4EC;
     --black-text: #000000;
     --gray-light: #E0E0E0;
+    --white-text: #ffffff;
 }
 
 * {
@@ -368,7 +369,7 @@ button:hover, .quick-btn:hover {
 }
 
 .led-text {
-    font-family: 'Times New Roman', serif !important;
+    font-family: 'Santrio', serif !important;
     font-weight: bold !important;
     font-size: 2.2rem !important;
     display: inline-block !important;
@@ -378,7 +379,7 @@ button:hover, .quick-btn:hover {
 .quick-btn {
     display: inline-block;
     background-color: var(--secondary-color);
-    color: var(--primary-color) !important;
+    color: var (--white-text) !important;
     padding: 10px 24px;
     border-radius: 6px;
     text-decoration: none;
