@@ -329,25 +329,44 @@ button:hover, .quick-btn:hover {
     }
 }
 
-/* Modern Switch Toggle Button sa pinaka-kanan */
+/* Tunay na Switch Toggle Style sa pinaka-kanan */
 .theme-toggle-btn {
     background-color: #ffffff;
-    color: #4c0000;
-    border: 2px solid #ffffff;
-    padding: 8px 16px;
-    border-radius: 30px;
+    border: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
     cursor: pointer;
-    font-family: 'Times New Roman', serif;
-    font-weight: bold;
     margin-left: auto;
-    transition: 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
 }
 
-.theme-toggle-btn:hover {
+/* Yung bilog sa loob ng switch */
+.theme-toggle-btn::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Kapag naka-dark mode na, gagalaw sa kanan ang bilog at iiba ang kulay ng track */
+body.dark-mode .theme-toggle-btn {
+    background-color: #333333;
+}
+
+body.dark-mode .theme-toggle-btn::before {
+    transform: translateX(30px);
     background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border-color: var(--primary-color);
 }
 
 /* LED Glow Effect na walang dark shadow (purong soft inner/text glow para sa dark mode) */
@@ -368,7 +387,7 @@ button:hover, .quick-btn:hover {
 
 /* Default state (Light mode) - Walang pailaw */
 .led-text {
-    font-family: 'Santrio', serif !important;
+    font-family: 'Times New Roman', serif !important;
     font-weight: bold !important;
     font-size: 2.2rem !important;
     display: inline-block !important;
@@ -385,7 +404,6 @@ body.dark-mode {
     color: var(--text-color) !important;
 }
 
-/* Kapag naka-dark mode, iilaw ang mga may class na led-text (tulad ng pangalan at mga headers) ng malinis na LED style */
 body.dark-mode .led-text {
     animation: softLedGlow 2s infinite alternate ease-in-out !important;
 }
