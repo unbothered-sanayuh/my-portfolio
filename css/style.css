@@ -422,4 +422,6 @@ body.dark-mode textarea {
     color: #ffffff !important;
     border-color: #555555 !important;
 }
+.profile-pic {
+    filter: blur(8px);
 
