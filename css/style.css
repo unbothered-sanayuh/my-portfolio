@@ -368,7 +368,7 @@ button:hover, .quick-btn:hover {
 
 /* Default state (Light mode) - Walang pailaw */
 .led-text {
-    font-family: 'Times New Roman', serif !important;
+    font-family: 'Santrio', serif !important;
     font-weight: bold !important;
     font-size: 2.2rem !important;
     display: inline-block !important;
